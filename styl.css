@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Times New Roman', serif;
+}
+
+.box {
+    background-color: aliceblue;
+    border-radius: 30px;
+    border: 1px solid grey;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#yes {
+    background-color: lightgreen;
+}
+
+#no {
+    background-color: lightcoral;
+}
+
+/* OVERLAY */
+#overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: pink;
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#overlay p {
+    font-size: 8vw;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#overlay button {
+    background-color: lightgreen;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+}

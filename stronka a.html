@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walentynka 💖</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+
+<div class="box">
+    <h2>Czy zostaniesz moją walentynką?</h2>
+
+    <img src="gif.jpg" alt="gif">
+
+    <div class="buttons">
+        <button id="yes">TAK</button>
+        <button id="no">NIE</button>
+    </div>
+</div>
+
+<!-- OVERLAY -->
+<div id="overlay">
+    <p>NO CHYBA CIĘ POJEBAŁO<br>DAJĘ CI OSTATNIĄ SZANSĘ</p>
+    <button id="yes2">TAK</button>
+</div>
+
+<script>
+    const yes = document.getElementById("yes");
+    const yes2 = document.getElementById("yes2");
+    const no = document.getElementById("no");
+    const overlay = document.getElementById("overlay");
+
+    yes.addEventListener("click", () => {
+        window.location.href = "tak.html";
+    });
+
+    yes2.addEventListener("click", () => {
+        window.location.href = "tak.html";
+    });
+
+    no.addEventListener("click", () => {
+        overlay.style.display = "flex";
+    });
+</script>
+
+</body>
+</html>
